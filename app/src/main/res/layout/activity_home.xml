@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_home"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fffff6"
+    tools:context="today.tailor.tt.Home">
+
+    <android.support.v4.widget.NestedScrollView
+        android:background="#d8fdfdfd"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:background="@drawable/shadow2"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp">
+
+                    <ImageView
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="0dp"
+                        android:src="@drawable/logo"
+                        android:background="#48c993"
+                        android:layout_marginBottom="8dp"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:layout_width="90dp"
+                        android:layout_height="match_parent" />
+
+
+                    <TextView
+                        android:layout_marginTop="0dp"
+                        android:text="Select Product"
+                        android:layout_marginBottom="12dp"
+                        android:paddingLeft="5dp"
+                        android:fontFamily="cursive"
+                        android:textColor="#fff"
+                        android:background="#1fbf87"
+                        android:textStyle="bold"
+                        android:textSize="30sp"
+                        android:gravity="center"
+                        android:textAlignment="textStart"
+                        android:padding="5dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+
+                </LinearLayout>
+
+
+                <android.support.v7.widget.RecyclerView
+                    android:layout_marginTop="-0dp"
+                    android:id="@+id/product_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+
+
+
+                </android.support.v7.widget.RecyclerView>
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_margin="10dp"
+                android:id="@+id/addOwnDesign"
+                android:background="@drawable/item_back"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+
+                <TextView
+                    android:text="Click to add your own ►►►"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    android:textAlignment="center"
+                    android:textColor="#868686"
+                    android:paddingLeft="5dp"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:paddingRight="20dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="-15dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"/>
+
+
+                <Button
+                    android:layout_gravity="center"
+                    android:background="@drawable/plus"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp" />
+
+
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+
+
+
+
+    </android.support.v4.widget.NestedScrollView>
+
+
+
+
+
+</RelativeLayout>
